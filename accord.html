@@ -4,18 +4,20 @@
 
 <head>
 
-<style>
-
-body{     background: -webkit-linear-gradient(left, #fff, #fff);
-          background: linear-gradient(to right, #fff, #FFF);}
-
+  <style>
+body{     
+  background: -webkit-linear-gradient(left, #fff, #fff);
+  background: linear-gradient(to right, #fff, #FFF);
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
 .accordionWrapper {
   padding:30px;
   background:#fff;
-  width:100%;float: left;
+  width:60%;
   box-sizing:border-box;
-  margin:0%;  
-  
+  margin:0 auto;  
 }
 
 .accordionItem{
@@ -46,8 +48,7 @@ body{     background: -webkit-linear-gradient(left, #fff, #fff);
     -ms-transform: scaleY(0);
     transform: scaleY(0);
     float:left;
-    display:block; 
-    
+    display:block;  
 }
 .open .accordionItemContent{
   color: #479a1a;
@@ -70,7 +71,6 @@ body{     background: -webkit-linear-gradient(left, #fff, #fff);
     -ms-transition: -ms-transform 0.4s ease;
     transition: transform 0.4s ease;
     box-sizing: border-box;
-
 }
 
 .open .accordionItemHeading{
@@ -90,23 +90,15 @@ body{     background: -webkit-linear-gradient(left, #fff, #fff);
     background-color: #479a1a
     color: #7f8c8d;
     content: "\2212";
-
 }
-
-</style>
-
-
+  </style>
 </head>
-
-  <body>
-
-<div class="accordionWrapper">
-<div class="accordionItem close">
+<body>
+  <div class="accordionWrapper">
+    <div class="accordionItem close">
       <h2 class="accordionItemHeading">What is CBD?</h2>
       <div class="accordionItemContent">
         <p>Cannabidiol (CBD) is a non-intoxicating Cannabinoid found in the flowers of the hemp plant. CBD was once over-shadowed by THC (the compound in cannabis sativa that causes a buzz)  </p>
-
-        
       </div>
     </div>
 
