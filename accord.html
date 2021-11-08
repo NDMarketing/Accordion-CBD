@@ -1,95 +1,11 @@
-<html>  
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<style>
-body{     
-  background: -webkit-linear-gradient(left, #fff, #fff);
-  background: linear-gradient(to right, #fff, #FFF);
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-}
-.accordionWrapper {
-  padding:30px;
-  background:#fff;
-  width:60%;
-  box-sizing:border-box;
-  margin:0 auto;  
-}
-
-.accordionItem{
-    float:left;
-    display:block;
-    width:100%;
-    box-sizing: border-box;
-    font-family:'Open-sans',Arial,sans-serif;
-    text-align: center;
-}
-.accordionItemHeading{
-    cursor:pointer;
-    margin:0px 0px 10px 0px;
-    padding:10px;
-    background:rgb(138, 204, 62);
-    color:#fff;
-    width:100%;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    box-sizing: border-box;
-}
-.close .accordionItemContent{
-    height:0px;
-    transition:height 1s ease-out;
-    -webkit-transform: scaleY(0);
-    -o-transform: scaleY(0);
-    -ms-transform: scaleY(0);
-    transform: scaleY(0);
-    float:left;
-    display:block;  
-}
-.open .accordionItemContent{
-  color: #479a1a;
-        padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    width: 100%;
-    margin: 0px 0px 10px 0px;
-    display:block;
-    -webkit-transform: scaleY(1);
-    -o-transform: scaleY(1);
-    -ms-transform: scaleY(1);
-    transform: scaleY(1);
-    -webkit-transform-origin: top;
-    -o-transform-origin: top;
-    -ms-transform-origin: top;
-    transform-origin: top;
-    -webkit-transition: -webkit-transform 0.4s ease-out;
-    -o-transition: -o-transform 0.4s ease;
-    -ms-transition: -ms-transform 0.4s ease;
-    transition: transform 0.4s ease;
-    box-sizing: border-box;
-}
-.open .accordionItemHeading{
-    margin:0px;
-    -webkit-border-top-left-radius: 3px;
-    -webkit-border-top-right-radius: 3px;
-    -moz-border-radius-topleft: 3px;
-    -moz-border-radius-topright: 3px;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    -webkit-border-bottom-right-radius: 0px;
-    -webkit-border-bottom-left-radius: 0px;
-    -moz-border-radius-bottomright: 0px;
-    -moz-border-radius-bottomleft: 0px;
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    background-color: #479a1a
-    color: #7f8c8d;
-    content: "\2212";
-}
-img {
-  width:100%;
-}
-  </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/accord-style.css">
+  <title>Accordion Example</title>
 </head>
 <body>
   <div class="accordionWrapper">
@@ -120,29 +36,16 @@ img {
      <div class="accordionItem close">
       <h2 class="accordionItemHeading">Picture?</h2>
       <div class="accordionItemContent">
-        <p><img src="cbdoilpic.jpg" alt="Italian Trulli"></p>
+        <p><img src="./images/cbdoilpic.jpg" class='img-accord' alt="CBD Oil Drops"></p>
       </div>
     </div>
 </div>
+  <footer>
+    <script type="text/javascript" src="./scripts/accord.js"></script>
+  </footer>
 </body>
-<footer>
-<script type="text/javascript">
-    var accItem = document.getElementsByClassName('accordionItem');
-    var accHD = document.getElementsByClassName('accordionItemHeading');
-  
-    for (i = 0; i < accHD.length; i++) {
-        accHD[i].addEventListener('click', toggleItem, false);
-    }
-    function toggleItem() {
-        var itemClass = this.parentNode.className;
-        for (i = 0; i < accItem.length; i++) {
-            accItem[i].className = 'accordionItem close';
-        }
-        if (itemClass == 'accordionItem close') {
-            this.parentNode.className = 'accordionItem open';
-        }
-    }
-</script>
-</footer>
 </html>
+
+
+
 
