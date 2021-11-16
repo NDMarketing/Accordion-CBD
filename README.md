@@ -1,2 +1,4 @@
 # Accordion-CBD
- Accordion I made for Shopify CBD Shop
+ Simple Accordion made for Shopify CBD Shop. 
+
+ No JQUERY
